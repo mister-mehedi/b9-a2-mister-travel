@@ -164,6 +164,8 @@ nav .links {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
 }
 
 .banner-form {
@@ -293,7 +295,7 @@ nav .links {
 }
 
 .destination-pics .row {
-  height: 300px;
+  /* height: 300px; */
   display: flex;
   gap: 1.5rem;
   margin-bottom: 1.5rem;
@@ -382,7 +384,7 @@ nav .links {
 }
 
 .chose-cards .row {
-  height: 300px;
+  /* height: 300px; */
   /* display: flex; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -393,7 +395,7 @@ nav .links {
 }
 
 .chose-cards .row2 {
-  height: 300px;
+  /* height: 300px; */
   display: grid;
   grid-template-columns: 550px;
 }
@@ -443,6 +445,96 @@ nav .links {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
+}
+
+.news {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  /* justify-content: space-between; */
+}
+
+.news1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  border: 1px solid #FF5400;
+  border-radius: 16px;
+
+  padding: 1.5rem;
+}
+
+.news1 h1 {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 800;
+
+}
+
+.news1 p {
+  color: #5A5A5D;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.news1 input[type=text] {
+  width: 393px;
+  height: 52px;
+  flex-shrink: 0;
+
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  border: 0;
+  padding-left: 1.5rem;
+}
+
+.news1 button {
+  width: 418px;
+  border-radius: 10px;
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.news2 img {
+  margin-top: 100px;
+}
+
+.news2 button {
+  position: relative;
+  bottom: 175px;
+  left: 340px;
+
+  width: 324px;
+  height: 120px;
+  transform: rotate(-19.628deg);
+  flex-shrink: 0;
+
+  border-radius: 16px;
+  background: #FF5400;
+}
+
+#news-btn-1 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#news-btn-2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
 }
 
 
@@ -533,10 +625,58 @@ hr {
 }
 
 @media screen and (max-width:600px) {
-  .dropdown-bar {
+  .toogle-btn {
     display: block;
-    left: 2rem;
-    width: unset;
   }
 
+  .banner-title {
+    font-size: 22px;
+  }
+
+  .banner-des {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .banner-form {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+  }
+
+  .banner-form input[type=text],
+  .banner-dropdown {
+    width: 255px;
+    height: 52px;
+  }
+
+  .banner-dropdown {
+    width: 270px;
+  }
+
+  #banner-form-btn {
+    width: 270px;
+    height: 52px;
+  }
+
+  .destination-pics .row {
+    flex-direction: column;
+  }
+
+  .chose-cards .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .chose-card {
+    margin: 0 3rem;
+  }
+
+  .news {
+    flex-direction: column;
+  }
+
+  .news2 {
+    /* width: fit-content; */
+    margin: 0 100px;
+
+  }
 }
