@@ -1,19 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap');
+
 /* *********Common*************************** */
 * {
   margin: 0;
   padding: 0;
 }
 
-header {
+/* header {
   background-color: antiquewhite;
-}
+} */
 
-main {
+/* main {
   background-color: aqua;
-}
+} */
 
 footer {
-  background-color: pink;
+  background: rgba(19, 19, 24, 0.05);
 }
 
 header,
@@ -22,6 +24,17 @@ footer {
   position: relative;
   padding: 0 2rem;
   margin: 1rem;
+}
+
+.btn-primary {
+  width: 174px;
+  height: 52px;
+  flex-shrink: 0;
+
+  border-radius: 8px;
+  background: #FF5400;
+  color: white;
+  border: 0;
 }
 
 
@@ -35,6 +48,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  margin-bottom: 50px;
 }
 
 .nav-content {
@@ -44,11 +59,31 @@ nav {
   align-items: center;
 }
 
-li {
+.nav-icon {
+  width: 48px;
+  height: 56.008px;
+  flex-shrink: 0;
+}
+
+#nav-idx1 {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+#nav-idx2 {
+  color: #FF5400;
+  font-family: Mulish;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.links li {
   list-style: none;
 }
 
-a {
+.links a {
   text-decoration: none;
   font-size: 1rem;
 }
@@ -56,6 +91,20 @@ a {
 nav .links {
   display: flex;
   gap: 2rem;
+}
+
+.links li a {
+  color: #424247;
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#nav-home {
+  color: #FF5400;
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .toogle-btn {
@@ -99,6 +148,52 @@ nav .links {
   text-align: center;
 }
 
+.banner-title {
+  color: #FFF;
+  font-family: Mulish;
+  font-size: 64px;
+  font-weight: 800;
+}
+
+.banner-des {
+  width: 676px;
+
+  color: #FFF;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.banner-form {
+  display: inline-flex;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 24px;
+
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.30);
+}
+
+.banner-form input[type=text],
+.banner-dropdown {
+  width: 174px;
+  height: 52px;
+  flex-shrink: 0;
+
+  border-radius: 8px;
+  background: #FFF;
+
+  border: 0;
+
+  color: rgba(19, 19, 24, 0.50);
+  text-align: start;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 16px;
+}
+
 
 /* ********Main********************************************* */
 /* section {
@@ -118,9 +213,43 @@ nav .links {
   display: flex;
   align-items: center;
   gap: 3rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
   /* justify-content: space-between; */
 
 }
+
+.popular-tours-title {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 40px;
+
+  font-weight: 800;
+}
+
+.popular-tours-des {
+  /* width: 577px; */
+
+  color: rgba(19, 19, 24, 0.70);
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.popular-tours-content ul li {
+  color: rgba(19, 19, 24, 0.70);
+  margin-left: 20px;
+}
+
+.bullet-text {
+  color: rgba(19, 19, 24, 0.70);
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
 
 .destination {
   width: 100%;
@@ -133,6 +262,28 @@ nav .links {
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.destination-title {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.destination-des {
+  width: 643px;
+
+  color: rgba(19, 19, 24, 0.70);
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .destination img {
@@ -188,6 +339,10 @@ nav .links {
   left: 50%;
   transform: translate(-50%, -50%);
 
+  color: #FFF;
+  font-family: Mulish;
+  font-size: 28px;
+  font-weight: 800;
 }
 
 .chose {
@@ -201,21 +356,91 @@ nav .links {
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.chose .row {
+.chose-title {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.chose-des {
+  padding-top: 1.5rem;
+  width: 643px;
+
+  color: rgba(19, 19, 24, 0.70);
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.chose-cards .row {
   height: 300px;
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   margin-bottom: 1.5rem;
+
+  /* padding: 2rem; */
 }
 
-.chose-card {
+.chose-cards .row2 {
+  height: 300px;
+  display: grid;
+  grid-template-columns: 550px;
+}
+
+.chose-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: left;
+  padding-top: 3rem;
+}
+
+.chose-card {
+  border: 2px solid red;
+  padding: 2rem;
+
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.20);
+  background: rgba(251, 181, 99, 0.05);
+}
+
+#chose-card-blue-color {
+  border: 1px solid rgba(41, 206, 246, 0.20);
+  background: rgba(41, 206, 246, 0.05);
+}
+
+.chose-card img {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+}
+
+.chose-card h1 {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.chose-card p {
+  /* width: 400px; */
+
+  color: #5A5A5D;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 
@@ -235,6 +460,44 @@ nav .links {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.footer-des {
+  padding-top: 1.5rem;
+
+  color: #5A5A5D;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+
+.social-links {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.social-links a {
+  padding-left: 1rem;
+}
+
+.footer-conclusion {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background: rgba(19, 19, 24, 0.10);
+
+  margin-bottom: 3rem;
 }
 
 
