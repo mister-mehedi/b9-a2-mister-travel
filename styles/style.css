@@ -1,0 +1,264 @@
+/* *********Common*************************** */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: antiquewhite;
+}
+
+main {
+  background-color: aqua;
+}
+
+footer {
+  background-color: pink;
+}
+
+header,
+main,
+footer {
+  position: relative;
+  padding: 0 2rem;
+  margin: 1rem;
+}
+
+
+/* ********Header***************************** */
+nav {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-content {
+  display: flex;
+  gap: 1rem;
+
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.toogle-btn {
+  display: none;
+}
+
+.dropdown-bar {
+  display: none;
+  /* position: absolute; */
+  right: 2rem;
+  top: 60px;
+  width: 300px;
+  background: rgba(255, gree255n, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.dropdown-bar li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0) 100%), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+
+  width: 100%;
+  height: 500px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/* ********Main********************************************* */
+/* section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+} */
+.popular-tours {
+  width: 100%;
+  height: 550px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  /* justify-content: space-between; */
+
+}
+
+.destination {
+  width: 100%;
+  /* height: 550px; */
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.destination img {
+  width: 100%;
+  height: 100%;
+}
+
+.destination-pics .row {
+  height: 300px;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.maldives {
+  position: relative;
+  text-align: center;
+}
+
+.indonesia {
+  position: relative;
+  text-align: center;
+}
+
+.srilanka {
+  position: relative;
+  text-align: center;
+}
+
+.north-america {
+  position: relative;
+  text-align: center;
+}
+
+.kashmir {
+  position: relative;
+  text-align: center;
+}
+
+.bangladesh {
+  position: relative;
+  text-align: center;
+}
+
+.bandarban {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.chose {
+  width: 100%;
+  /* height: 550px; */
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.chose .row {
+  height: 300px;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.chose-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+
+
+
+
+
+/* *********Footer********************************************* */
+.footer-all {
+  width: 100%;
+  height: 500px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/* **********Media********************************************* */
+@media screen and (max-width:992px) {
+
+  nav .links {
+    display: none;
+  }
+
+  .toogle-btn {
+    display: block;
+  }
+
+  /* .dropdown-bar {
+    display: block;
+  } */
+}
+
+@media screen and (max-width:600px) {
+  .dropdown-bar {
+    display: block;
+    left: 2rem;
+    width: unset;
+  }
+
+}
